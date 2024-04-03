@@ -33,7 +33,7 @@ jobs:
         with:
           push: false
           file: ./Containerfile
-          tags: photoneo/openvpn-client:latest
+          tags: photoneo/ra:openvpn-client-latest
 
       - name: Build and push
         uses: docker/build-push-action@v3
@@ -41,4 +41,4 @@ jobs:
         with:
           push: true
           file: ./Containerfile
-          tags: photoneo/openvpn-client:latest
+          tags: photoneo/ra:openvpn-client-latest
